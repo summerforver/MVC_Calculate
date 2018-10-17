@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalculateView.h"
+#import "Calculate.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong)CalculateView *calculateView;
+@property (nonatomic, strong)Calculate *calculate;
 
 @end
 

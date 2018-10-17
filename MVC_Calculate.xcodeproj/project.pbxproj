@@ -15,6 +15,8 @@
 		1BEE4D232154A18C00A1F7CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE4D222154A18C00A1F7CA /* main.m */; };
 		1BEE4D2D2154A18C00A1F7CA /* MVC_CalculateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE4D2C2154A18C00A1F7CA /* MVC_CalculateTests.m */; };
 		1BEE4D382154A18C00A1F7CA /* MVC_CalculateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE4D372154A18C00A1F7CA /* MVC_CalculateUITests.m */; };
+		1BEE4D472154A1B100A1F7CA /* Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE4D462154A1B100A1F7CA /* Calculate.m */; };
+		1BEE4D4A2154A1DF00A1F7CA /* CalculateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE4D492154A1DF00A1F7CA /* CalculateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		1BEE4D332154A18C00A1F7CA /* MVC_CalculateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVC_CalculateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEE4D372154A18C00A1F7CA /* MVC_CalculateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVC_CalculateUITests.m; sourceTree = "<group>"; };
 		1BEE4D392154A18C00A1F7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BEE4D452154A1B100A1F7CA /* Calculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculate.h; sourceTree = "<group>"; };
+		1BEE4D462154A1B100A1F7CA /* Calculate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculate.m; sourceTree = "<group>"; };
+		1BEE4D482154A1DF00A1F7CA /* CalculateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateView.h; sourceTree = "<group>"; };
+		1BEE4D492154A1DF00A1F7CA /* CalculateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,9 @@
 			children = (
 				1BEE4D132154A18C00A1F7CA /* AppDelegate.h */,
 				1BEE4D142154A18C00A1F7CA /* AppDelegate.m */,
-				1BEE4D162154A18C00A1F7CA /* ViewController.h */,
-				1BEE4D172154A18C00A1F7CA /* ViewController.m */,
+				1BEE4D4B2154A1E200A1F7CA /* model */,
+				1BEE4D4C2154A1EC00A1F7CA /* view */,
+				1BEE4D4D2154A1F900A1F7CA /* controller */,
 				1BEE4D192154A18C00A1F7CA /* Main.storyboard */,
 				1BEE4D1C2154A18C00A1F7CA /* Assets.xcassets */,
 				1BEE4D1E2154A18C00A1F7CA /* LaunchScreen.storyboard */,
@@ -130,6 +137,33 @@
 				1BEE4D392154A18C00A1F7CA /* Info.plist */,
 			);
 			path = MVC_CalculateUITests;
+			sourceTree = "<group>";
+		};
+		1BEE4D4B2154A1E200A1F7CA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE4D452154A1B100A1F7CA /* Calculate.h */,
+				1BEE4D462154A1B100A1F7CA /* Calculate.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1BEE4D4C2154A1EC00A1F7CA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE4D482154A1DF00A1F7CA /* CalculateView.h */,
+				1BEE4D492154A1DF00A1F7CA /* CalculateView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1BEE4D4D2154A1F900A1F7CA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE4D162154A18C00A1F7CA /* ViewController.h */,
+				1BEE4D172154A18C00A1F7CA /* ViewController.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BEE4D4A2154A1DF00A1F7CA /* CalculateView.m in Sources */,
+				1BEE4D472154A1B100A1F7CA /* Calculate.m in Sources */,
 				1BEE4D182154A18C00A1F7CA /* ViewController.m in Sources */,
 				1BEE4D232154A18C00A1F7CA /* main.m in Sources */,
 				1BEE4D152154A18C00A1F7CA /* AppDelegate.m in Sources */,
